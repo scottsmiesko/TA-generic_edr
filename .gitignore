@@ -4,3 +4,5 @@ __pycache__/
 *$py.class
 local/
 metadata/local.meta
+**/.DS_Store
+**.log
