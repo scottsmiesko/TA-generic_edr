@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "TA-generic_edr"
+version = "0.1.0"
+description = "Generic EDR Add-On for Splunk"
+authors = ["Scott Smiesko <scott.smiesko@gmail.com>"]
+readme = "README.md"
+license = "proprietary"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+splunk-sdk = "^1.7.3"
+ipy = "^1.1"
+python-dateutil = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

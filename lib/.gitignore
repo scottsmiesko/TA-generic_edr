@@ -1,0 +1,4 @@
+# only commit our library for the project
+# required libraries will be included during packaging
+*
+!genedr
