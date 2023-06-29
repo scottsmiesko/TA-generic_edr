@@ -1,5 +1,3 @@
-import json
-from dataclasses import asdict
 from datetime import datetime
 from .baseclient import BaseClient
 from .types import Alert, Alerts, Query
@@ -48,8 +46,8 @@ class API(BaseClient):
         # Wow, would be nice to have imo
         # https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body/
         # Sure, why not... it's imaginary anyways.
-        with self.request("QUERY", endpoint, data=json.dumps(asdict(query))) as response:
+        with self.request("QUERY", endpoint, data=query.json()) as response:
             alerts = Alerts()
             for alert in response:
-                alerts.entries += Alert.from_json(alert)
+                alerts.entries += Alert(**alert.json())
         return alerts
