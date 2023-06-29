@@ -3,9 +3,11 @@ from datetime import datetime
 
 app = FastAPI()
 
+
 @app.head("/")
 async def root():
     pass
+
 
 @app.post("/api/v1/authenticate/simple")
 async def auth():
