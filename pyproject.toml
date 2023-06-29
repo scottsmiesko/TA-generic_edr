@@ -12,6 +12,7 @@ requests = "^2.31.0"
 splunk-sdk = "^1.7.3"
 ipy = "^1.1"
 python-dateutil = "^2.8.2"
+solnlib = "^4.11.2"
 
 
 [build-system]

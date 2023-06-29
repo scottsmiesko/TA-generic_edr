@@ -96,6 +96,17 @@ files = [
 ]
 
 [[package]]
+name = "defusedxml"
+version = "0.7.1"
+description = "XML bomb protection for Python stdlib modules"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+files = [
+    {file = "defusedxml-0.7.1-py2.py3-none-any.whl", hash = "sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61"},
+    {file = "defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69"},
+]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -163,6 +174,35 @@ files = [
 ]
 
 [[package]]
+name = "solnlib"
+version = "4.11.2"
+description = "The Splunk Software Development Kit for Splunk Solutions"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "solnlib-4.11.2-py3-none-any.whl", hash = "sha256:2f4ff54c009cff92dee09a1f9e32bec4ba40b2be066c287e6b4e331cd8a5ed5a"},
+    {file = "solnlib-4.11.2.tar.gz", hash = "sha256:501f8aecbb8df8176e1e870d568bc856f21055c0242849409792aa0c44f8bffa"},
+]
+
+[package.dependencies]
+defusedxml = ">=0.7.1,<0.8.0"
+requests = ">=2.31.0,<3.0.0"
+sortedcontainers = ">=2.2,<3.0"
+splunk-sdk = ">=1.6.18"
+urllib3 = "<2"
+
+[[package]]
+name = "sortedcontainers"
+version = "2.4.0"
+description = "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sortedcontainers-2.4.0-py2.py3-none-any.whl", hash = "sha256:a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0"},
+    {file = "sortedcontainers-2.4.0.tar.gz", hash = "sha256:25caa5a06cc30b6b83d11423433f65d1f9d76c4c6a0c90e3379eaa43b9bfdb88"},
+]
+
+[[package]]
 name = "splunk-sdk"
 version = "1.7.3"
 description = "The Splunk Software Development Kit for Python."
@@ -174,22 +214,21 @@ files = [
 
 [[package]]
 name = "urllib3"
-version = "2.0.3"
+version = "1.26.16"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 files = [
-    {file = "urllib3-2.0.3-py3-none-any.whl", hash = "sha256:48e7fafa40319d358848e1bc6809b208340fafe2096f1725d05d67443d0483d1"},
-    {file = "urllib3-2.0.3.tar.gz", hash = "sha256:bee28b5e56addb8226c96f7f13ac28cb4c301dd5ea8a6ca179c0b9835e032825"},
+    {file = "urllib3-1.26.16-py2.py3-none-any.whl", hash = "sha256:8d36afa7616d8ab714608411b4a3b13e58f463aee519024578e062e141dce20f"},
+    {file = "urllib3-1.26.16.tar.gz", hash = "sha256:8f135f6502756bde6b2a9b28989df5fbe87c9970cecaa69041edcce7f0589b14"},
 ]
 
 [package.extras]
-brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
-secure = ["certifi", "cryptography (>=1.9)", "idna (>=2.0.0)", "pyopenssl (>=17.1.0)", "urllib3-secure-extra"]
-socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
-zstd = ["zstandard (>=0.18.0)"]
+brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)", "brotlipy (>=0.6.0)"]
+secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "ipaddress", "pyOpenSSL (>=0.14)", "urllib3-secure-extra"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "37f43a1291c9ec1033d668ec513f8f938a6ad689be36b4fc1f5a4b71d8ff71ff"
+content-hash = "79535d2692258def4d995d328b645f78f66cc06713bd5437ddc134f511bbbbdd"
