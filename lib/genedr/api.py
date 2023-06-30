@@ -47,7 +47,7 @@ class API(BaseClient):
                              f"{UPPER_RESULT_LIMIT}")
         # Wow, would be nice to have imo
         # https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body/
-        # Sure, why not... it's imaginary anyways.
+        # Sure, why not... it's imaginary anyway.
         with self.request("QUERY", endpoint, data=json.dumps(asdict(query))) as response:
             alerts = Alerts()
             for alert in response:
