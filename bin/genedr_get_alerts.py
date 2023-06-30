@@ -12,11 +12,9 @@ try:
         Event
     from solnlib.modular_input import checkpointer
     from solnlib import log
-    from solnlib.log import log_enter_exit
     from IPy import IP
     from dateutil import parser
-    from genedr import API
-    from genedr.types import Query
+    from genedr import API, Query
 except ImportError as err:
     raise Exception(f"FATAL: unable to import local library: {str(err)}")
 

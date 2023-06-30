@@ -13,7 +13,6 @@ splunk-sdk = "^1.7.3"
 ipy = "^1.1"
 python-dateutil = "^2.8.2"
 solnlib = "^4.11.2"
-dataclass-wizard = "^0.22.2"
 
 [tool.poetry.group.dev.dependencies]
 fastapi = "^0.98.0"

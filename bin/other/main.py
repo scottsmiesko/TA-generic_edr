@@ -8,7 +8,7 @@ from faker.providers import internet, file, person
 
 try:
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "lib"))
-    from genedr.types import Alert, Alerts, Query
+    from genedr import Alert, Alerts, Query
 except ImportError as e:
     raise Exception(f"Could not import: {str(e)}")
 

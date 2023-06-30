@@ -141,21 +141,6 @@ files = [
 ]
 
 [[package]]
-name = "dataclass-wizard"
-version = "0.22.2"
-description = "Marshal dataclasses to/from JSON. Use field properties with initial values. Construct a dataclass schema with JSON input."
-optional = false
-python-versions = "*"
-files = [
-    {file = "dataclass-wizard-0.22.2.tar.gz", hash = "sha256:211f842e5e9a8ace50ba891ef428cd78c82579fb98024f80f3e630ca8d1946f6"},
-    {file = "dataclass_wizard-0.22.2-py2.py3-none-any.whl", hash = "sha256:49be36ecc64bc5a1e9a35a6bad1d71d33b6b9b06877404931a17c6a3a6dfbb10"},
-]
-
-[package.extras]
-timedelta = ["pytimeparse (>=1.1.7)"]
-yaml = ["PyYAML (>=5.3)"]
-
-[[package]]
 name = "defusedxml"
 version = "0.7.1"
 description = "XML bomb protection for Python stdlib modules"
@@ -723,4 +708,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "d9cb32a2e02603b70d70860aea1478fc340b13a0dbdcbed31dddcc72adbc7f4a"
+content-hash = "aeeff171f06005e443eccc280acc10e9a50dc5ef500084b45c3c1b0193c531f9"
